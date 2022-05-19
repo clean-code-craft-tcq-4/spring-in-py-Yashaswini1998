@@ -1,10 +1,8 @@
-import numpy as np
-
 def calculateStats(numbers):
     if len(numbers) == 0:
         return float('NaN')
     else:
-        l_avg = np.average(numbers)
+        l_avg = sum(numbers)/len(numbers)
         l_max = max(numbers)
         l_min = min(numbers)
         dict_Stats = {'avg': l_avg, 'max': l_max, 'min': l_min}    
